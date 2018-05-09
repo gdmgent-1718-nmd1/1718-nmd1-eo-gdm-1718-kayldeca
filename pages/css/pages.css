@@ -9,16 +9,19 @@ body {
     color: #333;
     line-height: 1.5em;
     padding: 25px;
-}
+} 
 
 img {
     max-width: 100%; /* Afbeeldingen responsive maken */
-}
+} 
 
 /* Voeg jouw css hieraan toe */
 
+/* CSS voor introductie */
 
-#header h1 {
+
+
+#header,h2 {
 	color: white;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -55,7 +58,7 @@ img {
 #aboutme {
 	margin-top: 5px;
 	margin-bottom: 100px;
-	background: darkgrey;
+	background: white;
   color: white;
   height: 600px;
   
@@ -74,4 +77,32 @@ img {
   h4,p{
     margin-left: 20px;
     margin-right: 20px;
+    color: black;
   }
+
+  /* EINDE INTRO */
+
+
+/* CONCURRENTIE */
+
+.container2{
+  width:960px;   
+  margin:0 auto;
+  margin-top: 60px;
+
+}
+
+.colum-one-pros{
+ width:48%; 
+ float:left;
+ margin-right: 15px;
+}
+
+.colum-two-cons{
+ width:48%; 
+ float:left;
+ 
+}
+
+
+
