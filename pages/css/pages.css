@@ -70,8 +70,8 @@ img {
     height: 90px;
     width: 90px;
     margin-left: 10px;
-    padding:1px;
-    border: 2px solid white;
+
+    border: 1px solid white;
   }
 
   h4,p{
