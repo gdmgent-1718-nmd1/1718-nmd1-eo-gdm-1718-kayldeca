@@ -3,7 +3,6 @@ body {
     font-weight: 400;
     letter-spacing: -.022em;
     font-synthesis: none;
-    -moz-font-feature-settings: 'kern';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #333;
@@ -104,5 +103,60 @@ img {
  
 }
 
+/* styleguide */
+
+.maincontent {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 700px;
+
+  background: white;
+  color: darkgrey;
+
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
 
 
+
+.linker {
+  float: left;
+  height: 100%;
+  width:250px;
+
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-right-width: 1px;
+  border-right-color: lightgray;
+  border-right-style: solid;
+
+}
+
+#zoom, #zoom2 {
+  padding: 1px;
+  transition: transform .2s; 
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 75px;
+}
+
+#zoom:hover, #zoom2:hover {
+  transform: scale(1.1); 
+}
+
+
+
+
+.guitar {
+  transition: filter .5s ease-in-out;
+  -webkit-filter: grayscale(0%); 
+  filter: grayscale(0%); 
+}
+.guitar:hover {
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%); 
+}
