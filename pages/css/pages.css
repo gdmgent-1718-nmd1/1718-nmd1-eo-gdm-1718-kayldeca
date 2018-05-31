@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
@@ -106,18 +108,12 @@ img {
 /* styleguide */
 
 .maincontent {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 1000px;
-  height: 700px;
 
-  background: white;
-  color: darkgrey;
+  width: 1600px;
+  height: 1000px;
+  background-color: black;
+  margin-left: 10px;
 
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
 }
 
 
@@ -134,30 +130,115 @@ img {
   border-right-style: solid;
 
 }
+.midden {
 
-#zoom, #zoom2 {
+ height: 100%;
+ width: 400px;
+ position: absolute;
+ left: 250px;
+ border-right-width: 1px;
+ border-right-color: lightgray;
+ border-right-style: solid;
+}
+.rechter {
+
+  height: 100%;
+  width: 350px;
+  position: absolute;
+  left: 650px;
+}
+
+.zoom{
   padding: 1px;
   transition: transform .2s; 
   width: 200px;
   height: 200px;
   margin: 0 auto;
   margin-top: 75px;
-}
-
-#zoom:hover, #zoom2:hover {
-  transform: scale(1.1); 
-}
-
-
-
-
-.guitar {
   transition: filter .3s ease-in-out;
   transition: .3s ease-in-out;
   -webkit-filter: grayscale(0%); 
   filter: grayscale(0%); 
 }
-.guitar:hover {
+
+.zoom:hover {
+  transform: scale(1.1); 
   -webkit-filter: grayscale(100%); 
   filter: grayscale(100%); 
+  cursor: pointer;
+}
+
+.connected {
+  background-color: black;
+  width: 326px;
+  height: 35px;
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  color: #7057a1;
+  font-size: 1.1em;
+  font-family: 'Lato', sans-serif;
+  padding-top: 10px;
+  padding-left: 24px;
+}
+
+.fa {
+  color: white;
+  font-size: 1.2em;
+  margin-left: 8px;
+
+}
+.fa1 {
+  margin-left: 24px;
+}
+.fa:hover {
+  color: #7057a1;
+  cursor: pointer;
+}
+
+button {
+  position: relative;
+  display:block;
+  height: 45px;
+  width: 150px;
+  margin: 10px 7px;
+  padding: 5px 5px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: black;
+  border: 2px black solid;
+  text-transform: uppercase;
+  outline: 0;
+  overflow:hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.08s ease-in;
+  -o-transition:      0.08s ease-in;
+  -ms-transition:     0.08s ease-in;
+  -moz-transition:    0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+
+.fill:hover {
+  color: white;
+  background: #7057a1;
+}
+
+.fill:before {
+  content: "";
+  position: absolute;
+  background: #7057a1;;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.fill:hover:before {
+  top: 0;
 }
