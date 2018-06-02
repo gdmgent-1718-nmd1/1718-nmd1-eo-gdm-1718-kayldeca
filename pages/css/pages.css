@@ -113,7 +113,7 @@ img {
   font-family: 'Lato', sans-serif;
 }
 
-
+/* navigatie */
 .nav {
   position: fixed;
   top: 0px;
@@ -153,6 +153,8 @@ a {
   text-decoration: none;
 }
 
+
+/* header*/
 .header {
   width: 100%;
   margin-top: 92px;
@@ -185,6 +187,9 @@ a {
   font-size: 0.3em;
 }
 
+
+
+/* logo */
 .logo {
   background-color: black;
   width: 100%;
@@ -225,6 +230,8 @@ p.logotext {
   
 }
 
+
+/* colors */
 .colors {
   background-color: black;
   width: 100%;
@@ -299,6 +306,8 @@ border: 1px solid white;
   background-color: #7057a1;
 }
 
+
+/* typography */
 .typography{
 
   width: 100%;
@@ -394,6 +403,8 @@ p.bijschriftlink {
   
 }
 
+
+/* buttons */
 .buttons {
   width: 100%;
   height: 500px;
@@ -485,6 +496,8 @@ button {
   color: #7057a1;
 }
 
+
+/* icons */
 .icons {
   width: 100%;
   height: 400px;
@@ -526,7 +539,7 @@ button {
 }
 
 
-
+/* photos */
 .photos {
   width: 100%;
   height: 470px;
